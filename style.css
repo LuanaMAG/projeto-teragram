@@ -1,0 +1,81 @@
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header nav h2 i {
+    padding: 0 20px;
+}
+header nav div i {
+    padding: 0 30px;
+}
+#numeros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#numero div {
+    text-align: center;
+}
+#numero img {
+    border: radius 50px;;
+}
+#descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#descricao * {
+    margin-bottom: 0;
+}
+#editar-perfil {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botao {
+    width: 95%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 6px 0;
+    font-weight: bolder;
+    font-size: 16px;
+    border: #ddd solid 2px;
+}
+
+#foto-perfil{
+    border-radius: 100px;
+}
+.holder {
+    display: flex;
+}
+
+.holder coluna1 coluna2{
+    display: flex;
+}
+
+.holder {
+        flex-flow: row wrap;
+        display:flex;
+        justify-content: space-between;
+}
+.imagem {
+  width: 650px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+.imagem::after{
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
